@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MVIZadanie2XForms"
+    x:Class="MVIZadanie2XForms.MainPage">
+    <StackLayout
+        VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand"
+        Padding="10" >
+        <Label 
+            VerticalOptions="Center" 
+            HorizontalOptions="FillAndExpand" 
+            Text="Meno:" />
+        <Entry
+            x:Name="NameEntry"
+            VerticalOptions="Center" 
+            HorizontalOptions="FillAndExpand" />
+        <Label 
+            VerticalOptions="Center" 
+            HorizontalOptions="FillAndExpand" 
+            Text="Obtiaznost predmetu:" />
+        <Entry
+            x:Name="SubjectDifficultyEntry"
+            VerticalOptions="Center" 
+            HorizontalOptions="FillAndExpand" />
+        <Label 
+            VerticalOptions="Center" 
+            HorizontalOptions="FillAndExpand" 
+            Text="Pocet hodin ucenia:" />
+        <Entry
+            x:Name="HoursStudiedEntry"
+            VerticalOptions="Center" 
+            HorizontalOptions="FillAndExpand" />
+        <Button
+            x:Name="PredictGradeButton"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand" 
+            Text="Predpovedat znamku"
+            Clicked="PredictGradeButton_OnClicked"/>
+        <Label 
+            x:Name="PredictedGradeLabel"
+            VerticalOptions="Center" 
+            HorizontalOptions="FillAndExpand" />
+    </StackLayout>
+</ContentPage>
